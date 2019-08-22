@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chameleon.iservev10"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.chameleon.iservev10.MainActivity" />
+        <activity android:name="com.chameleon.iservev10.ItemListScreen" />
+        <activity android:name="com.chameleon.iservev10.SignIn" />
+        <activity android:name="com.chameleon.iservev10.SignUp" />
+        <activity
+            android:name="com.chameleon.iservev10.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.chameleon.iservev10.FoodList" />
+        <activity
+            android:name="com.chameleon.iservev10.Rest"
+            android:label="@string/title_activity_rest"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.chameleon.iservev10.Finalise" />
+        <activity android:name="com.chameleon.iservev10.Fruit" />
+        <activity android:name="com.chameleon.iservev10.Delivery" />
+        <activity android:name="com.chameleon.iservev10.Region" />
+        <activity android:name="com.chameleon.iservev10.GridMenu" />
+        <activity android:name="com.chameleon.iservev10.GridLin" />
+        <activity android:name="com.chameleon.iservev10.FoodDetail" />
+        <activity android:name="com.chameleon.iservev10.FoodDetailOriginal" />
+        <activity android:name="com.chameleon.iservev10.Cart" />
+        <activity android:name="com.chameleon.iservev10.CartList" />
+        <activity android:name="com.chameleon.iservev10.CartListFinal" />
+        <activity android:name="com.chameleon.iservev10.GridWeight" />
+        <activity android:name="com.chameleon.iservev10.LaundryPrice" />
+        <activity android:name="com.chameleon.iservev10.laundryCheckbox" />
+        <activity android:name="com.chameleon.iservev10.FinalPage" />
+        <activity android:name="com.chameleon.iservev10.TicketType" />
+        <activity android:name="com.chameleon.iservev10.Ambulance" />
+        <activity android:name="com.chameleon.iservev10.BackInfoBill" />
+        <activity android:name="com.chameleon.iservev10.BillPayment" />
+        <activity android:name="com.chameleon.iservev10.BusTicket" />
+        <activity android:name="com.chameleon.iservev10.Grocery" />
+        <activity android:name="com.chameleon.iservev10.HotelBooking" />
+        <activity android:name="com.chameleon.iservev10.Medicine" />
+        <activity android:name="com.chameleon.iservev10.RentaCar" />
+        <activity android:name="com.chameleon.iservev10.TrainTicket" />
+        <activity android:name="com.chameleon.iservev10.Doctor" />
+        <activity android:name="com.chameleon.iservev10.DisplaySubMenu" />
+        <activity android:name="com.chameleon.iservev10.OrderCheck" />
+        <activity android:name="com.chameleon.iservev10.ManualOrder" />
+        <activity android:name="com.chameleon.iservev10.SplashScreen" />
+        <activity android:name="com.chameleon.iservev10.MainScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.chameleon.iservev10.ContactUs" />
+    </application>
+
+</manifest>

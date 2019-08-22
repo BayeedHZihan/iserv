@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.chameleon.iservev10.GridWeight">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/foodIVLin"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#00B6DE"
+                    android:onClick="onFood"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/foodnew" />
+
+                <ImageView
+                    android:id="@+id/LaundryIVLin"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:background="#FF7659"
+                    android:onClick="onLaundry"
+
+
+                    app:srcCompat="@drawable/laundry"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Restaurants"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="10dp"
+                    android:text="Laundry"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ticketIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#F8CD36"
+                    android:onClick="onTicket"
+                    app:srcCompat="@drawable/ticket1" />
+
+                <ImageView
+                    android:id="@+id/BillPaymentIVIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#9E7AC2"
+                    android:onClick="onBillPayment"
+                    app:srcCompat="@drawable/bill"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Tickets"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Bill Payment"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/DoctorSerialIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#56DEA7"
+                    android:onClick="onDoctorSerial"
+                    app:srcCompat="@drawable/docctor" />
+
+                <ImageView
+                    android:id="@+id/GroceryIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+                    android:layout_marginTop="25dp"
+                    android:background="#FE7659"
+                    android:onClick="onGrocery"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/grocery"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Doctor"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Groceries"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/MedicineIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#F46175"
+                    android:onClick="onMedicine"
+                    app:srcCompat="@drawable/medicine" />
+
+                <ImageView
+                    android:id="@+id/AmbulanceIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#9e7ac2"
+                    android:onClick="onAmbulance"
+                    app:srcCompat="@drawable/ambulance"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Doctor"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Groceries"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/RentacarIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#006bde"
+                    android:onClick="onRentaCar"
+                    app:srcCompat="@drawable/rentacar" />
+
+                <ImageView
+                    android:id="@+id/HotelBookingIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#F46175"
+                    android:onClick="onHotelBooking"
+                    app:srcCompat="@drawable/hotel"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Rent-A-Car"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Hotel Booking"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/RepairIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#56DEA7"
+                    android:onClick="onRepair"
+                    app:srcCompat="@drawable/repair" />
+
+                <ImageView
+                    android:id="@+id/CourierIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+                    android:layout_marginTop="25dp"
+                    android:background="#9e7ac2"
+                    android:onClick="onCourier"
+                    app:srcCompat="@drawable/courier"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Repairs"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Courier Service"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/ProductIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#006bde"
+                    android:onClick="onProductDelivery"
+
+                    app:srcCompat="@drawable/productdelivery" />
+
+                <ImageView
+                    android:id="@+id/FruitIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#F46175"
+                    android:onClick="onFruit"
+                    app:srcCompat="@drawable/fruit"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Product Delivery"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Fruit"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/GiftIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#56DEA7"
+                    android:onClick="onGift"
+                    app:srcCompat="@drawable/gift" />
+
+                <ImageView
+                    android:id="@+id/ContactIVLin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginTop="25dp"
+                    android:background="#9e7ac2"
+                    android:onClick="onContact"
+                    app:srcCompat="@drawable/contact"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Gift"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Contact Us"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chameleon.iservev10">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ItemListScreen"></activity>
+        <activity android:name=".SignIn" />
+        <activity android:name=".SignUp" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".FoodList" />
+        <activity
+            android:name=".Rest"
+            android:label="@string/title_activity_rest"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Finalise" />
+        <activity android:name=".Fruit" />
+        <activity android:name=".Delivery" />
+        <activity android:name=".Region" />
+        <activity android:name=".GridMenu" />
+        <activity android:name=".GridLin" />
+        <activity android:name=".FoodDetail" />
+        <activity android:name=".FoodDetailOriginal" />
+        <activity android:name=".Cart" />
+        <activity android:name=".CartList" />
+        <activity android:name=".CartListFinal" />
+        <activity android:name=".GridWeight" />
+        <activity android:name=".LaundryPrice" />
+        <activity android:name=".laundryCheckbox" />
+        <activity android:name=".FinalPage" />
+        <activity android:name=".TicketType" />
+        <activity android:name=".Ambulance" />
+        <activity android:name=".BackInfoBill" />
+        <activity android:name=".BillPayment" />
+        <activity android:name=".BusTicket" />
+        <activity android:name=".Grocery" />
+        <activity android:name=".HotelBooking" />
+        <activity android:name=".Medicine" />
+        <activity android:name=".RentaCar" />
+        <activity android:name=".TrainTicket" />
+        <activity android:name=".Doctor" />
+        <activity android:name=".DisplaySubMenu" />
+        <activity android:name=".OrderCheck" />
+        <activity android:name=".ManualOrder" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".MainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactUs"></activity>
+    </application>
+
+</manifest>

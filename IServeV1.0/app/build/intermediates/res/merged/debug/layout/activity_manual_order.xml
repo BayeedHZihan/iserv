@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundre"
+    tools:context="com.chameleon.iservev10.ManualOrder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:padding="20dp"
+            android:text="Place your own customised order here for anything you want, from any place you want. "
+            />
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:paddingTop="10dp"
+            android:id="@+id/edtManualOrder"
+            android:padding="10dp"
+            android:hint="Your Manual Order"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="textPersonName"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
+            />
+
+    </LinearLayout>
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnLogin"
+        android:text="Confirm Order"
+        android:textColor="@android:color/white"
+
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:shadowColor="@android:color/black"
+        android:layout_width="400dp"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="4dp"
+        android:onClick="onManual"
+        app:buttonColor="@color/btnSignUp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+
+
+</RelativeLayout>
